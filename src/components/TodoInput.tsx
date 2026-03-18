@@ -18,13 +18,13 @@ export function TodoInput({ onAdd }: Props) {
       <input
         className={styles.input}
         type="text"
-        placeholder="What needs to be done?"
+        placeholder="新しいタスクを入力..."
         value={text}
         onChange={e => setText(e.target.value)}
         onKeyDown={e => e.key === 'Enter' && handleSubmit()}
       />
       <button className={styles.button} onClick={handleSubmit}>
-        Add
+        追加
       </button>
     </div>
   )

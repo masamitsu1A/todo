@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <div className={styles.app}>
-      <h1 className={styles.title}>TODO</h1>
+      <h1 className={styles.title}>TODOアプリ</h1>
       <div className={styles.card}>
         <TodoInput onAdd={addTodo} />
         <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} />

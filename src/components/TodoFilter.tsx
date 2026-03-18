@@ -8,16 +8,16 @@ interface Props {
 }
 
 const filters: { label: string; value: FilterType }[] = [
-  { label: 'All', value: 'all' },
-  { label: 'Active', value: 'active' },
-  { label: 'Completed', value: 'completed' },
+  { label: 'すべて', value: 'all' },
+  { label: '未完了', value: 'active' },
+  { label: '完了', value: 'completed' },
 ]
 
 export function TodoFilter({ current, activeCount, onChangeFilter }: Props) {
   return (
     <div className={styles.container}>
       <span className={styles.count}>
-        {activeCount} item{activeCount !== 1 ? 's' : ''} left
+        {activeCount}個のタスク
       </span>
       <div className={styles.buttons}>
         {filters.map(f => (
